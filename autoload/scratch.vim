@@ -6,7 +6,7 @@ function! scratch#MarkScratchBuffer(type)
   setlocal buflisted
 endfunction
 
-function! scratch#OpenScratchBuffer(forceSplitWin, vert, name, ...)
+function! scratch#OpenScratchBuffer(forceSplitWin, vert, ...)
   let bunName = "__SCRATCH__" . bufnr('%')
   if len(a:000)
     let bufName = a:000[0]
